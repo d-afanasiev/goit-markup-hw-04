@@ -39,7 +39,7 @@ body {
   color: var(--color-logo);
 }
 
-.color-link, .link-active:hover, .link-active:focus {
+.color-link, .nav-link:hover, .nav-link:focus, .contacts-link:hover, .contacts-link:focus {
   color: var(--color-link);
 }
 
@@ -110,14 +110,42 @@ body {
   margin-left: 50px;
 }
 
+/* .mail-link::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/envelope.svg);
+  margin-right: 10px;
+} */
+
+.tel-link::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.svg);
+  margin-right: 10px;
+}
+
 /* Hero */
 
 .hero {
-  background-color: var(--bg-hero);
-  text-align: center;
+  /* background-color: var(--bg-hero); */
+}
+
+.hero-overlay {
+  max-width: 1600px;
   min-height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-header.jpg);
+  background-color: var(--bg-hero);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -152,6 +180,34 @@ body {
 .advantages-item:last-child {
   margin-right: 0;
 }
+
+.advantages-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: var(--bg-section);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-item:nth-child(1):before {
+  background-image: url(../images/antenna.svg);
+}
+
+.advantages-item:nth-child(2):before {
+  background-image: url(../images/clock.svg);
+}
+
+.advantages-item:nth-child(3):before {
+  background-image: url(../images/diagram.svg);
+}
+
+.advantages-item:nth-child(4):before {
+  background-image: url(../images/astronaut.svg);
+}
+
 
 .advantages-title {
   font-weight: 700;
