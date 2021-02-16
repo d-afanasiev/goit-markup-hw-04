@@ -83,6 +83,8 @@ body {
 }
 
 .nav-link, .contacts-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -110,6 +112,26 @@ body {
   margin-left: 50px;
 }
 
+.sprite-mail {
+  width: 16px;
+  height: 12px;
+}
+
+.sprite-tel {
+  width: 10px;
+  height: 16px;
+}
+
+.sprite-mail, .sprite-tel {
+  fill: var(--color-secondary);
+  margin-right: 10px;
+}
+
+.contacts-link:hover .sprite-mail, .contacts-link:hover .sprite-tel {
+  fill: var(--color-link);
+}
+
+
 /* .mail-link::before {
   content: "";
   display: inline-flex;
@@ -130,9 +152,9 @@ body {
 
 /* Hero */
 
-.hero {
-  /* background-color: var(--bg-hero); */
-}
+/* .hero {
+  background-color: var(--bg-hero);
+} */
 
 .hero-overlay {
   max-width: 1600px;
@@ -181,7 +203,7 @@ body {
   margin-right: 0;
 }
 
-.advantages-item::before {
+/* .advantages-item::before {
   content: "";
   display: block;
   height: 120px;
@@ -206,6 +228,22 @@ body {
 
 .advantages-item:nth-child(4):before {
   background-image: url(../images/astronaut.svg);
+} */
+
+.icon-advantages {
+  background-color: var(--bg-section);
+  border-radius: 4px;
+  margin: auto;
+  height: 120px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.sprite {
+  width: 70px;
+  height: 70px;
 }
 
 
