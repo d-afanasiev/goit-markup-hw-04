@@ -113,16 +113,6 @@ body {
   margin-left: 50px;
 }
 
-.sprite-mail {
-  width: 16px;
-  height: 12px;
-}
-
-.sprite-tel {
-  width: 10px;
-  height: 16px;
-}
-
 .sprite-mail, .sprite-tel {
   fill: var(--color-secondary);
   margin-right: 10px;
@@ -232,21 +222,15 @@ body {
 } */
 
 .icon-advantages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--bg-section);
   border-radius: 4px;
   margin: auto;
   height: 120px;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
   margin-bottom: 30px;
 }
-
-.sprite {
-  width: 70px;
-  height: 70px;
-}
-
 
 .advantages-title {
   font-weight: 700;
@@ -307,8 +291,7 @@ body {
 }
 
 .teams-cont {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .teams-items {
@@ -344,8 +327,6 @@ body {
 }
 
 .teams-social {
-  padding-left: 32px;
-  padding-right: 32px;
   justify-content: space-around;
 }
 
@@ -356,6 +337,9 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.icon-social {
   fill: var(--icon-social);
 }
 
@@ -365,11 +349,6 @@ body {
 
 .social-link:hover .icon-social {
   fill: var(--color-hero);
-}
-
-.icon-social {
-  width: 20px;
-  height: 20px;
 }
 
 /* Clients */
@@ -409,32 +388,22 @@ body {
 }
 
 .sprite-tagline {
-  width: 40px;
-  height: 52px;
   fill: var(--icon-social);
 }
 
 .sprite-comp {
-  width: 41px;
-  height: 43px;
   fill: var(--icon-social);
 }
 
 .sprite-foster {
-  width: 80px;
-  height: 42px;
   fill: var(--icon-social);
 }
 
 .sprite-brand {
-  width: 59px;
-  height: 47px;
   fill: var(--icon-social);
 }
 
 .sprite-tag {
-  width: 89px;
-  height: 45px;
   fill: var(--icon-social);
 }
 
@@ -447,8 +416,6 @@ body {
 }
 
 .sprite-ya {
-  width: 44px;
-  height: 49px;
   fill: var(--icon-social);
 }
 
@@ -512,8 +479,6 @@ body {
 }
 
 .icon-join {
-  width: 20px;
-  height: 20px;
   fill: var(--color-hero);
 }
 
